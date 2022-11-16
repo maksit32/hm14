@@ -1,0 +1,87 @@
+﻿<Window x:Class="homework_14_11.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:homework_14_11"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" WindowStartupLocation="CenterScreen" Icon="/wall.jpg">
+    <FlowDocument FontSize="14" Name="fd" FontFamily="Times New Roman">
+        <BlockUIContainer>
+            <StackPanel>
+                <Label Foreground="Blue" FontSize="20" HorizontalContentAlignment="Center">Boeing 737</Label>
+                <Image Source="boeing.jpg" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+            </StackPanel>
+        </BlockUIContainer>
+        <Paragraph>
+            Всемирно известная компания
+            <Span Foreground="Green">Boeing</Span>
+            19 февраля 1965 года заявила миру о своем намерении создать транспортный авиалайнер малой дальности Model 737, причем с 2-мя турбовентиляторными двигателями, после чего крупнейшая авиакомпания Lufthansa из Западной Германии подписала контракт на приобретение 21 самолета модели 737 – об этом было объявлено одновременно с решением авиакомпании Боинг о запуске производства.
+Изначальная запланированная вместимость авиалайнера Boeing-737 составляет от 60 до 85 туристов, однако после переговоров с а/к Lufthansa было принято решение об увеличении числа пассажиров до 100. Из этих же соображений была выбрана и длина фюзеляжа.
+Первый авиалайнер модели 737-100 увидел небо 9 апреля 1967 года, а первый самолет «Люфтганзы» совершил стартовый полет месяцем позже.
+В результате авиалайнер Boeing-737 стал самым высоко покупаемым самолетом во всем мире. Так, уже к апрелю 1990 года было получено 2'773 заказа, а 1833 лайнера к тому времени уже были поставлены.
+Схему салона Boeing-737 можно посмотреть на иллюстрации, приведенной ниже.
+        </Paragraph>
+        <Paragraph>
+            <Bold>Базовые летно-технические характеристики лайнера Боинга-737:</Bold>
+        </Paragraph>
+        <List MarkerStyle="Disc">  <!--Точки-->
+            <ListItem>
+                <Paragraph>
+                    Размах крыла лайнера - 28.35 метров
+                </Paragraph>
+            </ListItem>
+            <ListItem>  <!--Каждая точка!-->
+                <Paragraph>
+                    Длина лайнера - 30.53 метров
+                </Paragraph>
+            </ListItem>
+            <ListItem>
+                <Paragraph>
+                    Высота лайнера - 11.28 метров
+                </Paragraph>
+            </ListItem>
+            <ListItem>
+                <Paragraph>
+                    Экипаж лайнера - 2 человека
+                </Paragraph>
+            </ListItem>
+            <ListItem>
+                <Paragraph>
+                    Крейсерская скорость лайнера  - 927 км/ч
+                </Paragraph>
+            </ListItem>
+            <ListItem>
+                <Paragraph>
+                    Масса максимальная взлетная лайнера - 53'070 кг
+                </Paragraph>
+            </ListItem>
+            <ListItem>
+                <Paragraph>
+                    Полезная нагрузка лайнера - 103 туриста в смешанных классах или 130 туристов в экономическом классе.
+                </Paragraph>
+            </ListItem>
+        </List>
+        <Paragraph Margin="0, 100, 0, 0">
+            <Image Source="boeing2.jpg" Width="350"/>
+            <Bold>Модификации Boeing 737-800</Bold>
+            1) Boeing 737-800BCF — грузовая версия самолета. Оборудована боковым люком. Может перевозить до 26,300 кг грузов на расстояние до 3,218 км.
+            2) Boeing 737 P-8 Poseidon — многофункциональный самолёт для авиации ВМС, разработанный на основе 737-800ERX, призванный заменить уже устаревший легендарный противолодочный самолёт времён холодной войны P-3 Orion. Предназначен для обнаружения и уничтожения подводных лодок противника в районах патрулирования, разведки, участия в противокорабельных и спасательных операциях — как в прибрежных районах, так и в Мировом океане. В основе — конструкция обновлённого лайнера Boeing 737-800. От прародителя его отличает крыло, лишённое винглетов, но имеющее законцовки с увеличенной стреловидностью.
+        </Paragraph>
+        <BlockUIContainer>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Label Content="Изображения самолета:" Foreground="Red" FontStyle="Oblique" FontSize="20" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" HorizontalContentAlignment="Center"/>
+                <Image Source="boeing3.jpg"  Grid.Row="1" Grid.Column="0"/>
+                <Image Source="wall.jpg"  Grid.Row="1" Grid.Column="1"/>
+            </Grid>
+        </BlockUIContainer>
+    </FlowDocument>
+</Window>
